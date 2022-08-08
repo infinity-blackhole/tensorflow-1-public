@@ -2,7 +2,7 @@
 
 pkgs.mkShell {
   buildInputs = [
-    (pkgs.python39.withPackages (pypkgs: with pypkgs; [ pip poetry ]))
+    (pkgs.python37.withPackages (pypkgs: with pypkgs; [ pip poetry ]))
     pkgs.bashInteractive
   ];
   shellHook = ''
